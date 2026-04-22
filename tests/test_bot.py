@@ -38,6 +38,57 @@ class BotHelpersTestCase(unittest.TestCase):
         self.assertIn("Ответило бирж: <b>1/9</b>", rendered)
         self.assertIn("Временно недоступно бирж: <b>2</b>", rendered)
 
+    def test_format_table_preserves_sorted_exchange_order(self) -> None:
+        summary = FetchSummary(
+            results=[
+                {
+                    "name": "Binance",
+                    "price": 10.0,
+                    "funding": 0.01,
+                    "oi": "1.00M",
+                    "countdown": "01:00|3",
+                },
+                {
+                    "name": "Bybit",
+                    "price": 10.0,
+                    "funding": 0.01,
+                    "oi": "1.00M",
+                    "countdown": "01:00|3",
+                },
+                {
+                    "name": "MEXC",
+                    "price": 10.0,
+                    "funding": 0.01,
+                    "oi": "1.00M",
+                    "countdown": "01:00|3",
+                },
+                {
+                    "name": "Gate",
+                    "price": 10.0,
+                    "funding": 0.01,
+                    "oi": "1.00M",
+                    "countdown": "01:00|3",
+                },
+                {
+                    "name": "OKX",
+                    "price": 10.0,
+                    "funding": 0.01,
+                    "oi": "1.00M",
+                    "countdown": "01:00|3",
+                },
+            ],
+            not_found_count=0,
+            upstream_error_count=0,
+            total_fetchers=9,
+        )
+
+        rendered = format_table("BTC", summary)
+
+        self.assertLess(rendered.index("Binance"), rendered.index("Bybit"))
+        self.assertLess(rendered.index("Bybit"), rendered.index("MEXC"))
+        self.assertLess(rendered.index("MEXC"), rendered.index("Gate"))
+        self.assertLess(rendered.index("Gate"), rendered.index("OKX"))
+
 
 if __name__ == "__main__":
     unittest.main()

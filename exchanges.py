@@ -7,6 +7,12 @@ import aiohttp
 from cachetools import TTLCache
 
 FETCH_TIMEOUT_SECONDS = 6
+EXCHANGE_DISPLAY_ORDER = {
+    "Binance": 0,
+    "Bybit": 1,
+    "MEXC": 2,
+    "Gate": 3,
+}
 
 
 class SymbolNotFoundError(LookupError):
@@ -31,6 +37,16 @@ class FetchSummary:
     @property
     def all_failed(self) -> bool:
         return not self.results and self.upstream_error_count == self.total_fetchers
+
+
+def sort_results(results: list[dict]) -> list[dict]:
+    return sorted(
+        results,
+        key=lambda result: EXCHANGE_DISPLAY_ORDER.get(
+            result["name"],
+            len(EXCHANGE_DISPLAY_ORDER),
+        ),
+    )
 
 
 def _countdown(next_funding_ts_ms: int, interval_hours: int) -> str:
@@ -488,7 +504,7 @@ async def fetch_all(symbol: str) -> FetchSummary:
         results.append(response)
 
     summary = FetchSummary(
-        results=results,
+        results=sort_results(results),
         not_found_count=not_found_count,
         upstream_error_count=upstream_error_count,
         total_fetchers=len(FETCHERS),

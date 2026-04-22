@@ -2,7 +2,12 @@ import unittest
 from unittest.mock import patch
 
 import exchanges
-from exchanges import FetchSummary, SymbolNotFoundError, UpstreamUnavailableError
+from exchanges import (
+    FetchSummary,
+    SymbolNotFoundError,
+    UpstreamUnavailableError,
+    sort_results,
+)
 
 
 class FetchSummaryTestCase(unittest.TestCase):
@@ -25,6 +30,23 @@ class FetchSummaryTestCase(unittest.TestCase):
         )
         self.assertTrue(summary.all_failed)
         self.assertFalse(summary.all_missing)
+
+    def test_sort_results_uses_custom_exchange_priority(self) -> None:
+        results = [
+            {"name": "OKX"},
+            {"name": "Gate"},
+            {"name": "MEXC"},
+            {"name": "Bybit"},
+            {"name": "Binance"},
+            {"name": "BingX"},
+        ]
+
+        ordered = sort_results(results)
+
+        self.assertEqual(
+            [result["name"] for result in ordered],
+            ["Binance", "Bybit", "MEXC", "Gate", "OKX", "BingX"],
+        )
 
 
 class FetchAllTestCase(unittest.IsolatedAsyncioTestCase):

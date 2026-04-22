@@ -1,0 +1,25 @@
+<svg width="760" height="500" viewBox="0 0 760 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="760" height="500" fill="#111A26"/>
+  <rect x="0" y="8" width="152" height="44" rx="22" fill="#2B5278"/>
+  <text x="22" y="36" fill="#F4F8FF" font-family="DejaVu Sans, Arial, sans-serif" font-size="18">pepe</text>
+  <text x="76" y="36" fill="#B5C6DE" font-family="DejaVu Sans, Arial, sans-serif" font-size="16">15:23</text>
+  <text x="120" y="36" fill="#8FC9FF" font-family="DejaVu Sans, Arial, sans-serif" font-size="18">✓✓</text>
+
+  <rect x="8" y="66" width="700" height="392" rx="24" fill="#1C2B3B"/>
+  <text x="24" y="96" fill="#FFFFFF" font-family="DejaVu Sans, Arial, sans-serif" font-size="19" font-weight="700">PEPEUSDT</text>
+  <rect x="18" y="108" width="678" height="321" rx="8" fill="#050A10"/>
+  <rect x="18" y="108" width="678" height="28" rx="8" fill="#38506C"/>
+  <text x="36" y="127" fill="#7DB6EF" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="700">copy</text>
+
+  <text x="32" y="186" fill="#65A9EA" font-family="DejaVu Sans Mono, monospace" font-size="18">Exc.   |Price   |Funding |OI      |Cntd.</text>
+  <text x="32" y="214" fill="#4C79A8" font-family="DejaVu Sans Mono, monospace" font-size="18">-------------------------------------------</text>
+  <text x="32" y="242" fill="#65A9EA" font-family="DejaVu Sans Mono, monospace" font-size="18">Binance|0.000004|+0.010% |96.24M  |03:36|3</text>
+  <text x="32" y="270" fill="#65A9EA" font-family="DejaVu Sans Mono, monospace" font-size="18">Bybit  |0.000004|+0.010% |57.80M  |03:36|3</text>
+  <text x="32" y="298" fill="#65A9EA" font-family="DejaVu Sans Mono, monospace" font-size="18">MEXC   |0.000004|+0.010% |38.04M  |03:36|3</text>
+  <text x="32" y="326" fill="#65A9EA" font-family="DejaVu Sans Mono, monospace" font-size="18">Gate   |0.000004|+0.007% |48.78M  |03:37|3</text>
+  <text x="32" y="354" fill="#65A9EA" font-family="DejaVu Sans Mono, monospace" font-size="18">Bitget |0.000004|+0.010% |31.93M  |03:37|3</text>
+  <text x="32" y="382" fill="#65A9EA" font-family="DejaVu Sans Mono, monospace" font-size="18">OKX    |0.000004|+0.010% |33.90M  |11:36|3</text>
+  <text x="32" y="410" fill="#65A9EA" font-family="DejaVu Sans Mono, monospace" font-size="18">HTX    |0.000004|+0.010% |1.41M   |03:37|3</text>
+  <text x="32" y="438" fill="#65A9EA" font-family="DejaVu Sans Mono, monospace" font-size="18">KuCoin |0.000004|+0.004% |32.50M  |03:37|3</text>
+  <text x="32" y="466" fill="#65A9EA" font-family="DejaVu Sans Mono, monospace" font-size="18">BingX  |0.000004|+0.010% |24.74M  |03:36|3</text>
+</svg>
