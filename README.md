@@ -17,9 +17,9 @@ Russian version: [README.ru.md](README.ru.md)
 ## Example
 
 <p align="center">
-  <img src="docs/assets/examples/btc-example.svg" alt="BTC example" width="32%" />
-  <img src="docs/assets/examples/eth-example.svg" alt="ETH example" width="32%" />
-  <img src="docs/assets/examples/pepe-example.svg" alt="PEPE example" width="32%" />
+  <img src="docs/assets/examples/btc-example.svg" alt="BTC example" width="31%" />
+  <img src="docs/assets/examples/eth-example.svg" alt="ETH example" width="31%" />
+  <img src="docs/assets/examples/pepe-example.svg" alt="PEPE example" width="31%" />
 </p>
 
 Input:

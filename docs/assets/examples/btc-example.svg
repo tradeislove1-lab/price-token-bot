@@ -1,13 +1,13 @@
-<svg width="760" height="500" viewBox="0 0 760 500" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="760" height="500" fill="#111A26"/>
+<svg width="760" height="540" viewBox="0 0 760 540" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="760" height="540" fill="#111A26"/>
   <rect x="0" y="8" width="142" height="44" rx="22" fill="#2B5278"/>
   <text x="22" y="36" fill="#F4F8FF" font-family="DejaVu Sans, Arial, sans-serif" font-size="18">btc</text>
   <text x="64" y="36" fill="#B5C6DE" font-family="DejaVu Sans, Arial, sans-serif" font-size="16">15:23</text>
   <text x="110" y="36" fill="#8FC9FF" font-family="DejaVu Sans, Arial, sans-serif" font-size="18">✓✓</text>
 
-  <rect x="8" y="66" width="700" height="392" rx="24" fill="#1C2B3B"/>
+  <rect x="8" y="66" width="700" height="440" rx="24" fill="#1C2B3B"/>
   <text x="24" y="96" fill="#FFFFFF" font-family="DejaVu Sans, Arial, sans-serif" font-size="19" font-weight="700">BTCUSDT</text>
-  <rect x="18" y="108" width="678" height="321" rx="8" fill="#050A10"/>
+  <rect x="18" y="108" width="678" height="380" rx="8" fill="#050A10"/>
   <rect x="18" y="108" width="678" height="28" rx="8" fill="#38506C"/>
   <text x="36" y="127" fill="#7DB6EF" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="700">copy</text>
 
