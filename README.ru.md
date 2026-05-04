@@ -17,9 +17,10 @@ English version: [README.md](README.md)
 ## Пример
 
 <p align="center">
-  <img src="docs/assets/examples/btc-example.svg" alt="BTC example" width="31%" />
-  <img src="docs/assets/examples/eth-example.svg" alt="ETH example" width="31%" />
-  <img src="docs/assets/examples/pepe-example.svg" alt="PEPE example" width="31%" />
+  <img src="docs/assets/examples/btc-example.png" alt="BTC example" width="24%" />
+  <img src="docs/assets/examples/eth-example.png" alt="ETH example" width="24%" />
+  <img src="docs/assets/examples/sol-example.png" alt="SOL example" width="24%" />
+  <img src="docs/assets/examples/doge-example.png" alt="DOGE example" width="24%" />
 </p>
 
 Вход:
