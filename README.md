@@ -49,12 +49,6 @@ Answered exchanges: 9/9
 Temporarily unavailable: 0
 ```
 
-## Why This Project
-
-- Useful as a lightweight market snapshot bot without exchange API keys
-- Good base for a richer crypto analytics bot
-- Small enough to understand quickly, but real enough to show practical async integration work
-
 ## Quick Start
 
 ### 1. Create a virtual environment
@@ -91,14 +85,6 @@ python3 -m unittest discover -s tests -v
 - `config.py` - environment loading
 - `exchanges.py` - exchange integrations and aggregation logic
 - `tests/` - lightweight regression tests
-
-## Ideas To Extend
-
-- Sort exchanges by highest price, lowest price, or funding rate
-- Add `/help` and `/exchanges` commands
-- Show spread between best and worst price
-- Add Docker support and a sample systemd service
-- Export structured logs for easier monitoring
 
 ## Notes
 
